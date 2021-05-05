@@ -1,0 +1,74 @@
+/*###### GLOBAL ###### */
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #c9cac2d2;
+}
+
+/*#### MAIN ####*/
+
+.main{
+    background-color: coral;
+    margin: 0 auto;
+    width: 80vw;
+    
+}
+
+/*#### MENU ####*/
+a {
+    text-decoration: none;
+}
+
+.menu{
+    background-color: brown;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 0 auto;
+    padding: 15px;
+    text-align: center;
+
+}
+
+.menu > a{
+    background: #d0ff0096; 
+    border: 3px solid black;
+    border-radius: 25%;
+    color: black;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    margin: 0 10px;
+    padding: 10px;
+}
+
+a:hover{
+    background-color: gold;
+}
+
+
+/*### ARTIGO ###*/
+
+.artigo{
+    letter-spacing: 2px;
+    margin: 40px auto;
+    
+}
+
+.artigo h1{
+    letter-spacing: 5px; 
+    text-align: center;
+}
+
+.artigo p{
+    font-family: sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+    margin-top: 10px;
+    text-align: left;
+  
+} 
