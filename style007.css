@@ -85,3 +85,21 @@ a:hover{
 .lista .item3{
     color: red;
 }
+
+html,body{
+    height: 100%;
+}
+
+.header{
+    width: 100%;
+    height: 200px;
+    background-color: #cccaaa;
+}
+
+.article{
+    margin: 0 auto;
+    width: 100%;
+    height: 300px;
+    background-color: red;
+
+}
