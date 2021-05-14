@@ -1,0 +1,94 @@
+/*### GLOBAL ###*/
+
+*{
+    margin:0;
+    padding:0;
+}
+   
+html,body{
+     height:100%;
+}
+
+/*### ESTRUTURA GERAL DO FORMULÁRIO ###*/
+
+/*# POSICIONAMENTO, TAMANHO E ALINHAMENTO DOS ITENS DO FORMULÁRIO #*/
+form{
+    max-width: 600px;
+    max-height: 800px;
+    margin: 5px auto; 
+    text-align: center;
+    width: 96%;
+}
+
+/*# AGRUPADOR DE CAMPOS(BORDA) #*/
+form fieldset{
+    border: 1px solid #ccc;
+    padding: 10px 40px;    
+}
+
+/*# DADOS PESSOAIS#*/
+form fieldset legend{
+    color:rgb(78, 76, 76);
+    font-size: 17px;
+    font-weight: bold;
+    text-align: left;    
+}
+
+
+/*### CAMPOS DO FORMULÁRIO ###*/
+
+/*# NOME E EMAIL #*/
+form input[type=text], input[type=email]{
+    border: 1px solid #ccc;
+    font-family: tahoma;
+    margin-top: 30px;
+    padding: 10px 13px;
+    width: 80%;    
+}
+
+/*# IDADE #*/
+form select{
+    border: 1px solid #ccc;
+    color:rgb(100,100,100);
+    display: inline-block;
+    font-family: tahoma;
+    margin-top: 30px;
+    padding: 10px 13px;
+    width: calc(80% + 26px);
+}
+
+/*# TÍTULOS #*/
+form h3{
+    color: rgb(100,100,100);
+    margin-top: 15px;
+}
+
+/*# RADIO E CHECKBOX #*/
+.input{
+    display: inline-block;
+    margin-top: 15px;
+    text-align: left;
+}
+
+/*# TEXTAREA #*/
+form textarea{
+    border: 1px solid #ccc;
+    font-family: tahoma;
+    height: 100px;
+    margin-top:30px;    
+    padding: 10px 13px;
+    resize: none;
+    width: 80%;
+}
+
+/*### BOTÕES ###*/
+.btn > input{
+    background-color: rgb(140,140,140);
+    border:2px solid rgb(130,130,130);   
+    color:white;
+    cursor: pointer;
+    font-size: 16px;
+    height: 40px;
+    margin-top:30px;
+    width: 140px;
+}

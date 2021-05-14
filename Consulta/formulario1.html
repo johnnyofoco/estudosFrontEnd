@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="formulario1.css">
+    <title>Formulário</title>
+</head>
+
+<body>
+    <form>
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+
+            <div><input type="text" name="nome" id="" placeholder="Digite seu nome"></div><!--Nome-->
+            <div><input type="email" name="email" id="" placeholder="Digite seu email"></div><!--eMail-->
+            <div>
+                <select name="idade" id="">
+                    <option value="" selected disabled>Qual sua idade?</option>
+                    <option value="18">18</option>
+                    <option value="25">25+</option>
+                    <option value="35">35+</option>
+                </select>
+            </div><!--Idade-->
+
+            <h3>Qual a sua cidade?</h3>
+            <div class="input">
+                <div>
+                    <input type="radio" id="saopaulo" name="cidade" value="10">
+                    <label for="saopaulo">São Paulo</label>
+                </div>
+                <div>
+                    <input type="radio" id="riodejaneiro" name="cidade" value="20">
+                    <label for="riodejaneiro">Rio de Janeiro</label>
+                </div>
+                <div>
+                    <input type="radio" id="florianopolis" name="cidade" value="30">
+                    <label for="florianopolis">Florianópolis</label>
+                </div>
+                <div>
+                    <input type="radio" id="pernambuco" name="cidade" value="40">
+                    <label for="pernambuco">Pernambuco</label>
+                </div>
+            </div><!--Cidade-->
+
+            <h3>Qual sua comida preferida?</h3>
+            <div class="input">
+                <div>
+                    <input type="checkbox" id="fruta" name="comida1" value="11">
+                    <label for="fruta">Fruta</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="fastfood" name="comida2" value="22">
+                    <label for="fastfood">Fast Food</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="salada" name="comida3" value="33">
+                    <label for="salada">Salada</label>
+                </div>
+            </div><!--Comida-->
+
+            <div>
+                <textarea name="observacao" id="obs" cols="40" rows="15"
+                    placeholder="Possui alguma observação?"></textarea>
+            </div><!--Observação-->
+
+            <div class="btn">
+                <input type="submit" name="btnEnviar" id="enviar" value="Enviar">
+                <input type="reset" name="btnLimpar" id="limpar" value="Limpar">
+            </div><!--Botões-->
+        </fieldset>
+    </form>
+
+</body>
+
+</html>
