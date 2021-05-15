@@ -22,24 +22,24 @@ form{
 
 /*# AGRUPADOR DE CAMPOS(BORDA) #*/
 form fieldset{
-    border: 1px solid #ccc;
     padding: 10px 40px;    
 }
 
 /*# DADOS PESSOAIS#*/
 form fieldset legend{
     color:rgb(78, 76, 76);
-    font-size: 17px;
+    font-size: 15px;
     font-weight: bold;
     text-align: left;    
 }
 
-
 /*### CAMPOS DO FORMULÁRIO ###*/
+form input,select,textarea{
+    border: 1px solid #ccc;
+}
 
 /*# NOME E EMAIL #*/
 form input[type=text], input[type=email]{
-    border: 1px solid #ccc;
     font-family: tahoma;
     margin-top: 30px;
     padding: 10px 13px;
@@ -48,7 +48,6 @@ form input[type=text], input[type=email]{
 
 /*# IDADE #*/
 form select{
-    border: 1px solid #ccc;
     color:rgb(100,100,100);
     display: inline-block;
     font-family: tahoma;
@@ -79,11 +78,12 @@ form textarea{
     padding: 10px 13px;
     resize: none;
     width: 80%;
+    color: red;
 }
 
 /*### BOTÕES ###*/
 .btn > input{
-    background-color: rgb(140,140,140);
+    background-color: rgb(172, 14, 14);
     border:2px solid rgb(130,130,130);   
     color:white;
     cursor: pointer;
