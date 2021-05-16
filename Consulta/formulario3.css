@@ -1,0 +1,106 @@
+/*### IMPORTANDO FONTES ###*/
+
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playball&display=swap');
+
+@font-face {
+    font-family: "Anton-regular";
+    src: url('../fonts/Anton-Regular.ttf');
+}
+
+/*### GLOBAL ###*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Great Vibes', cursive;
+    font-family: 'Press Start 2P', cursive;
+    font-family: 'Playball', cursive !important;    
+    font-family: 'Anton-regular'; 
+}
+
+html,body{
+    height: 100%;
+}
+
+form{
+    text-align: center;
+    background-color: #ccc;
+    padding: 30px 0;
+}
+
+/*### INPUT-FILE ###*/
+
+input[type="file"]{
+    display: none;
+}
+
+#labelFile{
+    display: block;
+    margin: 40px auto;
+    border: 2px solid black;
+    cursor: pointer;
+    font-size: 17px;
+    width: 220px;
+    height: 40px;
+    background-color:royalblue;
+    color: white;
+    text-align: center;
+    line-height: 40px;
+}
+
+/*### SELECT(COMBO-BOX) ###*/
+
+form select{
+    width: 220px;
+    height: 40px;
+    appearance: none;
+    border: 0;
+    padding-left: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    background-image: url('../imagens/logotipo-form2.png');
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    background-position: 96% 8px;
+    margin-bottom: 30px;
+}
+
+select::-ms-expand{
+    display: none;
+}
+
+/*### CHEKBOX ###*/
+
+input[type="checkbox"]{
+    display: none;    
+}
+
+.lbl_check{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin: 0 20px;
+    background-color: royalblue;
+    border-radius: 50%;
+}
+
+input[type="checkbox"]:checked + label{
+    width: 30px;
+    height: 30px;
+    background-color: red;
+}
+
+/*### PARAGRÁFO ###*/
+
+.texto{
+    width: 80%;
+    font-size: 35px;
+    margin: 0 auto;
+}
+
+.texto p{
+    margin-top: 35px;
+    text-align: right;
+    
+}

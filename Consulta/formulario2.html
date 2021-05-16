@@ -28,159 +28,174 @@
 
         <main>
             <form>
-                <div class="oneLine_menor"></div>
-                <h2>Ficha de Catequizando</h2>
-                <div class="oneLine"></div>
+                <div class="campos">
+                    <div class="oneLine_menor"></div>
+                    <h2>Ficha de Catequizando</h2>
+                    <div class="oneLine"></div>
 
-                <div>
-                    <label for="nome">Nome: </label>
-                    <input type="text" name="nome" id="nome">
+                    <div>
+                        <label for="nome">Nome: </label>
+                        <input type="text" name="nome" id="nome">
 
-                    <label>Sexo:</label>
-                    <input type="radio" name="masculino" id="masculino"><label for=""> Masculino</label>
-                    <input type="radio" name="masculino" id="masculino"><label for=""> Feminino</label>
+                        <label>Sexo:</label>
+                        <input type="radio" name="masculino" id="masculino"><label for=""> Masculino</label>
+                        <input type="radio" name="masculino" id="masculino"><label for=""> Feminino</label>
+                    </div>
+
+                    <div>
+                        <label for="dataNasc">Data de Nascimento:</label>
+                        <input type="text" name="dataNascimento" id="dataNasc">
+
+                        <label for="nacionalidade">Nacionalidade:</label>
+                        <select name="nacionalidade" id="nacionalidade">
+                            <option value="" selected disabled>Escolha:</option>
+                            <option value="brasileira">Brasileira</option>
+                            <option value="argentina">Argentina</option>
+                            <option value="paraguaia">Paraguaia</option>
+                            <option value="venezuelana">Venezuelana</option>
+                            <option value="outras">Outras</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="naturalidade">Naturalidade:</label>
+                        <select name="naturalidade" id="naturalidade">
+                            <option value="" selected disabled>Escolha:</option>
+                            <option value="lencoispta">Lençóis Paulista</option>
+                            <option value="macatuba">Macatuba</option>
+                            <option value="outras">Outras</option>
+                        </select>
+
+                        <label for="estadoCivil">Estado Civil:</label>
+                        <select name="estadoCivil" id="estadoCivil">
+                            <option value="" selected disabled>Escolha:</option>
+                            <option value="solteiro">Solteiro(a)</option>
+                            <option value="casado">Casado(a)</option>
+                            <option value="viuvo">Viúvo(a)</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="profissao">Profissão:</label>
+                        <input type="text" name="profissao" id="profissao">
+
+                        <label for="rg">RG:</label>
+                        <input type="text" name="rg" id="rg">
+
+                        <label for="cpf">CPF:</label>
+                        <input type="text" name="cpf" id="cpf">
+                    </div>
+
+                    <div>
+                        <label for="tituloeleitor">Título de eleitor:</label>
+                        <input type="text" name="tituloeleitor" id="tituloeleitor">
+
+                        <label for="zonaeleitoral">Zona Eleitoral:</label>
+                        <input type="text" name="zonaeleitoral" id="zonaeleitoral">
+
+                        <label for="sceleitoral">Seção Eleitoral:</label>
+                        <input type="text" name="sceleitoral" id="sceleitoral">
+                    </div>
+
+                    <div>
+                        <label for="endereco">Endereço:</label>
+                        <input type="text" name="endereco" id="endereco">
+                    </div>
+
+                    <div>
+                        <label for="bairro">Bairro:</label>
+                        <input type="text" name="bairro" id="bairro">
+                    </div>
+
+                    <div>
+                        <label for="cidade">Cidade:</label>
+                        <input type="text" name="cidade" id="cidade">
+
+                        <label for="cep">CEP:</label>
+                        <input type="text" name="cep" id="cep">
+                    </div>
+
+                    <div>
+                        <label for="nomepai">Nome do Pai:</label>
+                        <input type="text" name="nomepai" id="nomepai">
+
+                        <label for="nomemae">Nome da Mãe:</label>
+                        <input type="text" name="nomemae" id="nomemae">
+                    </div>
+                    <div>
+                        <label for="dizimistaresp">Dizimista Resp:</label>
+                        <input type="text" name="dizimistaresp" id="dizimistaresp">
+                    </div>
+
+                    <div>
+                        <p><strong>Contatos</strong></p>
+                    </div>
+                    <div>
+                        <label for="celular">Celular:</label>
+                        <input type="text" name="celular" id="celular">
+                    </div>
+
+                    <div class="oneLine" id="oneLineCelular"></div>
+
+                    <div>
+                        <label for="comunidade">Comunidade: </label>
+                        <select name="comunidade" id="comunidade">
+                            <option value="" selected disabled>Escolha:</option>
+                            <option value="santanaesaojoaquim">Paróquia Sant'Ana e São Joaquim - Matriz</option>
+                            <option value="cristoressucitado">Paróquia Cristo Rescussitado - Matriz</option>
+                            <option value="saojose">Paróquia São José - Matriz</option>
+                        </select>
+                    </div>
+
+                    <div class="oneLine"></div>
+
+                    <div>
+                        <input type="checkbox" name="batizado[]" id="batizado">
+                        <label for="checkbox">Batizado?:</label>
+
+                        <label for="livro">Livro:</label>
+                        <input type="text" name="livro" id="livro">
+
+                        <label for="folha">Folha:</label>
+                        <input type="text" name="folha" id="folha">
+
+                        <label for="numero">Número:</label>
+                        <input type="text" name="numero" id="numero">
+
+                        <label for="diocese">Diocese:</label>
+                        <input type="text" name="diocese" id="diocese">
+                    </div>
+
+                    <div>
+                        <label for="paroquia">Paróquia:</label>
+                        <input type="text" name="paroquia" id="paroquia">
+
+                        <label for="dataBatismo">Data do Batismo:</label>
+                        <input type="text" name="dataBatismo" id="dataBatismo">
+                    </div>
+
+                    <div class="oneLine"></div>
+
+
+                    <div class="oneLine"></div>
+
+                    <div>
+                        <h3>Histórico Catequético</h3>
+                        <p>Faltas</p>
+
+                        <label for="obs">Observação:</label><br>
+                        <textarea name="obs" id="" cols="30" rows="10">
+                </textarea>
+                    </div>
+
+                    <div class="botoes">
+                        <input type="submit" value="Salvar">
+                        <input type="reset" value="Limpar">
+                    </div>
+
                 </div>
-
-                <div>
-                    <label for="dataNasc">Data de Nascimento:</label>
-                    <input type="text" name="dataNascimento" id="dataNasc">
-
-                    <label for="nacionalidade">Nacionalidade:</label>
-                    <select name="nacionalidade" id="nacionalidade">
-                        <option value="" selected disabled>Escolha:</option>
-                        <option value="brasileira">Brasileira</option>
-                        <option value="argentina">Argentina</option>
-                        <option value="paraguaia">Paraguaia</option>
-                        <option value="venezuelana">Venezuelana</option>
-                        <option value="outras">Outras</option>
-                    </select>
-                </div>
-
-                <div>
-                    <label for="naturalidade">Naturalidade:</label>
-                    <select name="naturalidade" id="naturalidade">
-                        <option value="" selected disabled>Escolha:</option>
-                        <option value="lencoispta">Lençóis Paulista</option>
-                        <option value="macatuba">Macatuba</option>
-                        <option value="outras">Outras</option>
-                    </select>
-
-                    <label for="estadoCivil">Estado Civil:</label>
-                    <select name="estadoCivil" id="estadoCivil">
-                        <option value="" selected disabled>Escolha:</option>
-                        <option value="solteiro">Solteiro(a)</option>
-                        <option value="casado">Casado(a)</option>
-                        <option value="viuvo">Viúvo(a)</option>
-                    </select>
-                </div>
-
-                <div>
-                    <label for="profissao">Profissão:</label>
-                    <input type="text" name="profissao" id="profissao">
-
-                    <label for="rg">RG:</label>
-                    <input type="text" name="rg" id="rg">
-
-                    <label for="cpf">CPF:</label>
-                    <input type="text" name="cpf" id="cpf">
-                </div>
-
-                <div>
-                    <label for="">Título de eleitor</label>
-                    <input type="text" name="" id="">
-
-                    <label for="">Zona Eleitoral</label>
-                    <input type="text" name="" id="">
-
-                    <label for="">Seção Eleitoral</label>
-                    <input type="text" name="" id="">
-                </div>
-
-                <div>
-                    <label for="">Endereço:</label>
-                    <input type="text" name="" id="">
-                </div>
-
-                <div>
-                    <label for="">Bairro:</label>
-                    <input type="text" name="" id="">
-                </div>
-
-                <div>
-                    <label for="">Cidade:</label>
-                    <input type="text" name="" id="">
-
-                    <label for="cep">CEP:</label>
-                    <input type="text" name="cep" id="cep">
-                </div>
-
-                <div>
-                    <label for="">Nome do Pai:</label>
-                    <input type="text" name="" id="">
-
-                    <label for="">Nome da Mãe:</label>
-                    <input type="text" name="" id="">
-                </div>
-                <div>
-                    <label for="dizimistaresp">Dizimista Resp:</label>
-                    <input type="text" name="dizimistaresp" id="dizimistaresp">
-                </div>
-
-                <div>
-                    <p><strong>Contatos</strong></p>
-                </div>
-                <div>
-                    <label for="celular">Celular:</label>
-                    <input type="text" name="celular" id="celular">
-                </div>
-
-                <div class="oneLine"></div>
-
-                <div>
-                    <label for="comunidade">Comunidade: </label>
-                    <select name="comunidade" id="comunidade">
-                        <option value="" selected disabled>Escolha:</option>
-                        <option value="santanaesaojoaquim">Paróquia Sant'Ana e São Joaquim - Matriz</option>
-                        <option value="cristoressucitado">Paróquia Cristo Rescussitado - Matriz</option>
-                        <option value="saojose">Paróquia São José - Matriz</option>
-                    </select>
-                </div>
-
-                <div class="oneLine"></div>
-
-                <div>
-                    <input type="checkbox" name="batizado" id="batizado">
-                    <label for="checkbox">Batizado?:</label>
-
-                    <label for="livro">Livro:</label>
-                    <input type="text" name="livro" id="livro">
-
-                    <label for="folha">Folha:</label>
-                    <input type="text" name="folha" id="folha">
-
-                    <label for="numero">Número:</label>
-                    <input type="text" name="numero" id="numero">
-
-                    <label for="diocese">Diocese:</label>
-                    <input type="text" name="diocese" id="diocese">
-                </div>
-
-                <div>
-                    <label for="paroquia">Paróquia:</label>
-                    <input type="text" name="paroquia" id="paroquia">
-
-                    <label for="dataBatismo">Data do Batismo:</label>
-                    <input type="text" name="dataBatismo" id="dataBatismo">
-                </div>
-
-                <div class="oneLine"></div>
+                <!--Campos-->
             </form>
-
-            <div class="oneLine"></div>
-            <div>
-                <h3>Histórico Catequético</h3>
-                <p>Faltas</p>
-            </div>
         </main>
 
         <footer>
@@ -193,6 +208,7 @@
                 <p>LENÇÓIS PAULISTA-SP, <strong>Cx. Postal: , CEP.:</strong> 18682-740</p>
                 <p>Page 1 of 1</p>
             </div>
+
         </footer>
     </div>
     <!--Container-->
@@ -204,9 +220,6 @@
         $("#cep").mask("00.000-000");
         $("#celular").mask("(00) 00000-0000");
     </script>
-
-
-
 </body>
 
 </html>

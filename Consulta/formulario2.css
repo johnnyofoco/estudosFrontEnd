@@ -6,9 +6,15 @@
     box-sizing: border-box;
 }
 
+html,body{
+    background: coral;
+}
+
 .container{
     width: 80%;
     margin: 30px auto;
+    background: white;
+    padding: 30px 0;
 }
 
 /*### CABEÇALHO ###*/
@@ -48,14 +54,69 @@ h2{
     border-bottom: 1px solid black;
     margin: 10px auto;
     padding: 5px;
-    width: 80%;
 }
 
 .oneLine{
     border-bottom: 3px solid black;
     margin: 10px auto;
     padding: 5px;
-    width: 80%;
 }
 
-/**/
+/*PARTE PRINCIPAL DO FORMULÁRIO*/
+/*CONFIGURAÇÕES GERAIS DOS CAMPOS*/
+.campos{
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+input{
+    margin-top: 10px;
+    margin-right: 10px;
+    padding: 10px 13px;
+}
+
+select{
+    margin-top: 10px;
+    margin-right: 10px;
+    padding: 10px 13px;
+}
+
+.botoes{
+    text-align: center;
+}
+
+.botoes input[type="submit"]:hover, input[type="reset"]:hover {
+    cursor: pointer;
+    background-color: rgb(219, 14, 14);
+}
+
+.botoes input[type="submit"], input[type="reset"]{
+    color: white;
+    background-color: tomato;
+    border: 2px solid red;
+    border-radius: 25%;
+    width: 100px;
+    height: 50px;
+}
+
+/*FOOTER*/
+
+footer{
+    width: 80%;
+    margin: 30px auto;
+    background: white;
+}
+
+footer p{
+    display: inline;
+}
+
+footer div:nth-of-type(2) p:nth-of-type(2){
+    margin-left: 50%;
+    text-align: right;
+}
+
+footer div:nth-of-type(3) p:nth-of-type(2){
+    margin-left: 55%;
+    text-align: right;
+}
