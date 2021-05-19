@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            height: 100%;
+        }
+
+        form {
+            width: 50%;
+            background-color: rgb(122, 15, 15);
+            color: white;
+            margin: 30px auto;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        form div {
+            text-align: center;
+            padding: 20px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input[type="text"] {
+            width: 400px;
+            margin: 0 auto;
+            padding: 10px;
+            font-size: 18px;
+        }
+
+        input[type="submit"] {
+            color: white;
+            border: 2px solid rgb(24, 94, 94);
+            padding: 30px;
+            background-color: teal;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Consultar Registro de funcionário(a)</h1>
+    <form action="consultaBD.php" method="POST">
+
+        <div>
+            <label for="nome_txt">NOME:</label>
+            <input type="text" name="nome_txt" placeholder="Digite o nome completo ou parte do nome." required>
+            <div>
+                <input type="submit" value="Consultar">
+            </div>
+        </div>
+
+    </form>
+    </div>
+</body>
+
+</html>
