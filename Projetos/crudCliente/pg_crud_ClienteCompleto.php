@@ -1,7 +1,7 @@
 <?php
     include "conexaoPostgre.php";
     $minhaConexao = new Conexao();
-    $link = $minhaConexao;
+    $link = $minhaConexao->open();
 
     $nome = $_POST["txtNome"];
     $email = $_POST["txtEmail"];
@@ -47,4 +47,3 @@
 
     }
     //$minhaConexao->close();
-?>
