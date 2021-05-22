@@ -8,6 +8,8 @@ class Conexao{
 
     private $db_conn = pg_connect(" host = $hostname dbname = $dbname user = $username password = $pass ");
 
+    
+
     function open(){
         return this->$db_conn;
     }
