@@ -12,12 +12,14 @@ html,body{
 }
 
 .center{
-    max-width: 1280px;
+    max-width: 1200px;
     margin: 0 auto;
+    padding: 0 2%;
 }
 
 header{
-    width: 100%;
+    
+    min-width: 1200px;
     height: 60px;
     background-color: #212343;
 }
@@ -28,6 +30,7 @@ header img{
 
 .container-banner{
     width: 100%;
+    min-width: 1200px;
     height: 557px;
     background-image: url('../images/header_bg.png');
     background-size: cover;
@@ -46,7 +49,9 @@ header img{
     position: relative;
     top: -15px;
     background-color: white;
-    border: 8px solid #ccc;
+    border: 8px solid rgba(120,120,120,0.7);
+    background-color: white;
+    background-clip: padding-box;
 }
 
 .form h2{
@@ -97,4 +102,83 @@ header img{
 
 .form input[type=submit]:hover{
     background-color: #323665;
+}
+
+.container-list{
+    margin-top: 100px;
+    float: left;
+    width: 519px;
+    height: 270px;
+    background-color: rgba(33,35,67,0.7);
+    padding: 30px;
+    
+
+}
+
+.container-list ul{
+    list-style-position: inside;
+}
+
+.container-list ul li{
+    color: white;
+    margin-top: 18px;
+}
+
+.container-2{
+    min-width: 1200px;
+    padding: 40px 0;
+    background-color: #ddd;
+    text-align: center;    
+}
+
+.container-2 h2{
+    font-weight: normal;
+}
+
+.container-2 p{
+    width: 698px;
+    display: inline-block;
+    text-align: justify;
+    margin: 15px 0;
+}
+
+.arrow{
+    width: 40px;
+    height: 40px;
+    background-image: url(../images/arrow.png);
+    background-size: 100% 100%;
+    position: relative;
+    top: 60px;
+    margin: 0 auto;
+}
+
+.section-1{
+    min-width: 1200px;
+    padding: 90px 0;
+}
+
+.section-1 h2{
+    text-align: center;
+    color: #462663;
+    font-weight: normal;
+}
+
+.container-section{
+    margin-top: 40px;
+    text-align: center;
+}
+
+.container-single{
+    float: left;
+    width: 33.3%;
+    padding: 30px;
+}
+
+.container-single p{
+    padding: 10px 25px;
+    
+}
+
+.container-single img{
+    width: 70px;
 }
