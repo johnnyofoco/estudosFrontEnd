@@ -11,15 +11,20 @@ html,body{
     height: 100%;
 }
 
+.clear{
+    clear: both;
+}
+
 .center{
-    max-width: 1200px;
+    width: 100%;
+    max-width: 1280px;
     margin: 0 auto;
     padding: 0 2%;
 }
 
-header{
-    
-    min-width: 1200px;
+header{   
+    width: 100%;
+    padding: 0 2%;
     height: 60px;
     background-color: #212343;
 }
@@ -30,7 +35,7 @@ header img{
 
 .container-banner{
     width: 100%;
-    min-width: 1200px;
+    padding: 0 2%;
     height: 557px;
     background-image: url('../images/header_bg.png');
     background-size: cover;
@@ -39,6 +44,7 @@ header img{
 
 .container-banner > .center{
     height: 100%;
+
 }
 
 .form{
@@ -125,8 +131,7 @@ header img{
 }
 
 .container-2{
-    min-width: 1200px;
-    padding: 40px 0;
+    padding: 40px 2%;
     background-color: #ddd;
     text-align: center;    
 }
@@ -136,7 +141,8 @@ header img{
 }
 
 .container-2 p{
-    width: 698px;
+    width: 100%;
+    max-width: 768px;
     display: inline-block;
     text-align: justify;
     margin: 15px 0;
@@ -153,8 +159,8 @@ header img{
 }
 
 .section-1{
-    min-width: 1200px;
-    padding: 90px 0;
+
+    padding: 90px 2%;
 }
 
 .section-1 h2{
@@ -175,8 +181,9 @@ header img{
 }
 
 .container-single p{
-    padding: 10px 25px;
+    padding: 10px;
     text-align: justify;
+    display: inline-block;
     
 }
 
@@ -194,5 +201,108 @@ footer{
 
 footer p{
     margin-top: 8px;
+
+}
+
+
+/*SCREEN <= 1024px*/
+@media screen and (max-width: 1024px){
+    .header{   
+        width: 100%;
+        text-align: center;
+        height: auto;
+        padding: 15px 0;
+    }
+
+    .header img{
+        margin: 0;
+    }
+
+    .container-list{
+        padding-top: 30px;
+        
+        float: left;
+        width: 40%;
+        max-width: 500px;
+        height: auto;
+        display: inline-block;
+    }
+
+    .container-banner{
+        width: 100%;
+        height: auto;
+        padding: 40px 2%;
+        text-align: center;
+    }
+
+    .form{
+        
+        max-width: 400px;
+        padding: 10px;
+        width: 60%;
+        height: 100%;  
+        float: right;
+        top: 0;
+
+    }
+
+    .input-container{
+        margin-top: 20px;
+    }
+    
+    .input-container span, .form p{
+        display: inline-block;
+        width: 100%;
+        color: #888888;
+        font-size: 17px;
+    }
+    
+    .form p{
+        margin: 20px 0;
+    }
+    
+    .input-container input[type="text"]{
+        width: 100%;
+        height: 55px;
+
+    }
+
+    .form input[type=submit]{
+        max-width: 280px;
+        height: 56px;
+        width: 100%;
+    }
+
+}    
+
+/*SCREEN <= 768px*/
+@media screen and (max-width:768px){
+    .container-2{
+        padding-right: 4%;
+        padding-left: 4%;
+    }
+
+    .container-list{
+        margin-top: 0;
+        float: none;
+        display: inline-block;
+        width: 100%;
+    }
+
+    .form{
+        margin-top: 30px;
+        float: none;
+        display: inline-block;
+        width: 90%;
+    }
+
+    .container-single{
+        float: none;
+        display: inline-block;
+        width: 100%;
+        max-width: 600px;
+        padding: 30px 0;
+
+    }
 
 }
