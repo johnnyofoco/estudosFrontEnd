@@ -5,10 +5,57 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ex010</title>
+    <title>ex010 - vídeos e iframes</title>
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        video {
+            width: 52%;
+        }
+
+        header{
+            width: 100%;
+            position: relative;
+        }
+
+        .header video{
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 100%;
+        }
+
+        .overlay{
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6);
+        }
+
+        .overlay:hover{
+            background: rgba(0,0,0,0);
+            z-index: -1;
+        }
+    </style>
 </head>
 
 <body>
+    <!--<iframe width="800" height="800" src="http://supportweb.com.br/index.do"></iframe>-->
+    <header>
+        <div class="overlay"></div>
+        <video autoplay controls loop>
+            <source src="Videos/mymothertoldme.mp4" type="video/mp4">
+        </video>
+    </header>
 
 </body>
 
