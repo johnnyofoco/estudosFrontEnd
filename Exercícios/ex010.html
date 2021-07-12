@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ex010 - vídeos e iframes</title>
+    <title>ex010 - iframes, vídeos e audios</title>
     <style>
 
         *{
@@ -20,6 +20,7 @@
 
         header{
             width: 100%;
+            overflow: hidden;
             position: relative;
         }
 
@@ -43,7 +44,6 @@
 
         .overlay:hover{
             background: rgba(0,0,0,0);
-            z-index: -1;
         }
     </style>
 </head>
@@ -52,10 +52,15 @@
     <!--<iframe width="800" height="800" src="http://supportweb.com.br/index.do"></iframe>-->
     <header>
         <div class="overlay"></div>
-        <video autoplay controls loop>
+        <video muted autoplay controls loop>
             <source src="Videos/mymothertoldme.mp4" type="video/mp4">
         </video>
     </header>
+
+    <audio controls>
+        <source src="Audios/horse.ogv" type="audio/ogg">
+        <source src="Audios/horse.mp3" type="audio/ogg">
+    </audio>
 
 </body>
 
