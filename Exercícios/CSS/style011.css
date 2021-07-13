@@ -5,18 +5,46 @@
 }
 
 div.box{
-    width: 300px;
-    height: 300px;
+    width: 940px;
+    height: 800px;
+    position: relative;
     background-color: green;
-    transition: 1s width ease 2s, 3s height linear 4s;
+
+    /*transition: 1s width ease 2s, 3s height linear 4s;*/
 }
 
+div.box:hover{
+    animation: animacao_1 4s infinite;
+    animation-delay: 1s;
+}
+
+@keyframes animacao_1{
+    0%{
+        left: 100px;
+        background-color: green;
+    }
+
+    45%{
+        border: 6px solid red;
+        background-color: orange;
+        left: 50;
+    }
+
+    100%{
+        border: none;
+        left: 0;
+        background-color: red;
+    }
+}
+
+
+/*
 div.box:hover{
     width: 600px;
     height: 600px;
     background-color: red;
 }
-/*
+
 form input{
     width: 200px;
     height: 20px;
