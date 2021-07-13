@@ -7,8 +7,12 @@
 div.box{
     width: 940px;
     height: 800px;
+    margin: 10px auto;
     position: relative;
     background-color: green;
+    /*opacity: 0.6;*/
+    -webkit-box-shadow: 5px 5px 0px 0px #289FED, 10px 10px 0px 0px #5FB8FF, 15px 15px 0px 0px #A1D8FF, 20px 20px 0px 0px #CAE6FF, 25px 25px 0px 0px #E1EEFF, 1px 4px 8px 19px rgba(0,0,0,0); 
+    box-shadow: 5px 5px 0px 0px #289FED, 10px 10px 0px 0px #5FB8FF, 15px 15px 0px 0px #A1D8FF, 20px 20px 0px 0px #CAE6FF, 25px 25px 0px 0px #E1EEFF, 1px 4px 8px 19px rgba(0,0,0,0);
 
     /*transition: 1s width ease 2s, 3s height linear 4s;*/
 }
