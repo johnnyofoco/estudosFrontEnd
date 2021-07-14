@@ -45,7 +45,7 @@ div.box:hover{
     width: 100vw;
     height: 100vh;
     position: relative;
-    background: linear-gradient(red,orange,yellow,green,blue,purple);
+    background: linear-gradient(45deg, red,orange,yellow,green,blue,purple);
 }
 
 .box2 p{
