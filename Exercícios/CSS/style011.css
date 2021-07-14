@@ -41,6 +41,20 @@ div.box:hover{
     }
 }
 
+.box2{
+    width: 100%;
+    padding: 30px 2%;
+    background-color: rgb(220,200,200);
+    position: relative;
+}
+
+.box2 p{
+    display: inline;
+    word-wrap: break-word;
+    border-bottom: 2px solid green;
+    font-size: 16px;
+}
+
 
 /*
 div.box:hover{
