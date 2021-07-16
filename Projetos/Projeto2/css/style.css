@@ -1,0 +1,72 @@
+/*##### GLOBAL #####*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+}
+
+.clear{clear: both;}
+
+/*#### HEADER ####*/
+
+.container{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header{
+    padding: 10px 2%;
+    background-color: #D6D6D6;
+}
+
+.logo-1{
+    float: left;
+    width: 150px;
+    height: 60px;
+    background-image: url('../imagens/logo1.png');
+    background-size: 100% auto;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.logo-2{
+    float: right;
+    width: 150px;
+    height: 70px;
+    background-image: url('../imagens/logo2.png');
+    background-size: 100% auto;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 510px) {
+    
+    .container{
+        text-align: center;
+    }
+
+    .logo-1 , .logo-2{
+        margin-top: 10px;
+        float: none;
+        display: inline-block;
+    }    
+}
+
+/*#### ####*/
+
+/*#### ####*/
+
+/*#### ####*/
+
+/*#### ####*/
+
+/*#### ####*/
+
+/*#### ####*/
+
