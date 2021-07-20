@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
 }
 
 html, body{
@@ -21,8 +22,8 @@ html, body{
 }
 
 header{
-    padding: 10px 2% 30px 2%;
-    background-color: #D6D6D6;
+    padding: 10px 2% 40px 2%;
+    background-color: rgba(218, 165, 32, 0.836);
 }
 
 .logo-1{
@@ -64,15 +65,17 @@ section .cover-form{
     position: relative;
     top: -5%;
     height: 110%;
-    background-color: white;
+    background-color: rgba(218, 165, 32, 0.836);
+    
+    box-shadow: 1px 1px 2px 0px black
 }
 
 .form-container h2{
     font-weight: normal;
-    padding: 20px 15px;
-    color: black;
+    padding: 25px 15px;
+    color: white;
     font-size: 18px;
-    background-color: rgb(234,236,239);
+    background-color: black
 }
 
 .form-container form{
@@ -82,7 +85,7 @@ section .cover-form{
 
 .form-container p{
     font-size: 14px;
-    color: #525252;
+    color: white;
 }
 .form-wraper:not(:first-child){
     margin-top: 40px;
@@ -101,7 +104,7 @@ section .cover-form{
 }
 
 .form-container form input[type=submit]{
-    background-color: #033c50;
+    background-color: black;
     text-transform: uppercase;
     color: white;
     font-size: 25px;
@@ -111,6 +114,28 @@ section .cover-form{
     cursor: pointer;
 }
 
+.chamada{
+    
+    text-align: center;
+    text-align: center;
+    width: 100%;
+    display: inline-block;
+    margin-top: -70px;
+}
+
+.chamada .container{
+    background-color: #2c2b24;
+    padding: 50px 0;
+}
+
+.chamada h2{
+    width: 96%;
+    max-width: 700px;
+    display: inline-block;
+    color: white;
+    font-size: 26px;
+    font-weight: normal;
+}
 
 @media screen and (max-width: 510px) {
     
