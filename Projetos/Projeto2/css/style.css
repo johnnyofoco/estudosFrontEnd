@@ -22,6 +22,9 @@ html, body{
 }
 
 header{
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
     padding: 10px 2% 40px 2%;
     background-color: rgba(218, 165, 32, 0.836);
 }
@@ -66,7 +69,6 @@ section .cover-form{
     top: -5%;
     height: 110%;
     background-color: rgba(218, 165, 32, 0.836);
-    
     box-shadow: 1px 1px 2px 0px black
 }
 
@@ -114,6 +116,10 @@ section .cover-form{
     cursor: pointer;
 }
 
+.form-container form input[type=submit]:hover{
+    background-color: rgba(0, 0, 0, 0.644);
+}
+
 .chamada{
     
     text-align: center;
@@ -124,7 +130,7 @@ section .cover-form{
 }
 
 .chamada .container{
-    background-color: #2c2b24;
+    background-color: black; /*#2c2b24;*/
     padding: 50px 0;
 }
 
@@ -134,6 +140,15 @@ section .cover-form{
     display: inline-block;
     color: white;
     font-size: 26px;
+    font-weight: normal;
+}
+
+.chamada p{
+    width: 96%;
+    max-width: 700px;
+    display: inline-block;
+    color: white;
+    padding: 10px;
     font-weight: normal;
 }
 
