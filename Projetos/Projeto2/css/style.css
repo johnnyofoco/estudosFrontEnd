@@ -21,7 +21,7 @@ html, body{
 }
 
 header{
-    padding: 10px 2%;
+    padding: 10px 2% 30px 2%;
     background-color: #D6D6D6;
 }
 
@@ -44,6 +44,73 @@ header{
     background-position: center;
     background-repeat: no-repeat;
 }
+
+section .cover-form{
+    width: 100%;
+    padding: 0 2%;
+}
+
+.bg{
+    height: 700px;
+    background-position: center;
+    background-size: cover;
+    background-image: url('../imagens/bg-form.jpg');
+}
+
+.form-container{
+    float: right;
+    margin-right: 40px;
+    width: 400px;
+    position: relative;
+    top: -5%;
+    height: 110%;
+    background-color: white;
+}
+
+.form-container h2{
+    font-weight: normal;
+    padding: 20px 15px;
+    color: black;
+    font-size: 18px;
+    background-color: rgb(234,236,239);
+}
+
+.form-container form{
+    margin-top: 8px;
+    padding: 15px;
+}
+
+.form-container p{
+    font-size: 14px;
+    color: #525252;
+}
+.form-wraper:not(:first-child){
+    margin-top: 40px;
+}
+
+.form-wraper:last-child{
+    margin-top: 20px;
+}
+
+.form-container form input[type=text]{
+    width: 100%;
+    border: 1px solid #ccc;
+    height: 45px;
+    line-height: 45px;
+    padding-left: 10px;
+}
+
+.form-container form input[type=submit]{
+    background-color: #033c50;
+    text-transform: uppercase;
+    color: white;
+    font-size: 25px;
+    height: 50px;
+    width: 100%;
+    border: 0;
+    cursor: pointer;
+}
+
 
 @media screen and (max-width: 510px) {
     
