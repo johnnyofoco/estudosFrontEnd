@@ -38,7 +38,44 @@ header nav{
 }
 
 nav.mobile-menu{
+    cursor: pointer;
     display: none;
+    width: 32px;
+    height: 32px;
+    background-image: url('../Imagens/menu.png');
+    background-size: 100% 100%;
+}
+
+nav.mobile-menu:hover ul{
+    opacity: 1;
+}
+
+nav.mobile-menu ul{
+    opacity: 0;
+    transition: 1s;
+
+    background-color: white;
+    position: absolute;
+    left: 0;
+    top: 80px;
+    width: 100%;
+    color: black;
+    list-style-type: none;
+    text-align: center;
+}
+
+nav.mobile-menu ul li{
+    padding: 8px 0;
+    transition: 0.4s;
+    border-bottom: 1px solid black;
+}
+nav.mobile-menu ul li:hover{
+    background-color: rgb(228, 115, 115);
+}
+
+nav.mobile-menu ul a li{
+    color: black;
+    text-decoration: none;
 }
 
 header .logo{
