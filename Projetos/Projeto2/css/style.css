@@ -49,17 +49,21 @@ header{
     background-repeat: no-repeat;
 }
 
+/*#### BANNER ####*/
+
 section .cover-form{
     width: 100%;
     padding: 0 2%;
 }
 
 .bg{
-    height: 700px;
+    height: 600px;
     background-position: center;
     background-size: cover;
     background-image: url('../imagens/bg-form.jpg');
 }
+
+/*#### FORMULÁRIO ####*/
 
 .form-container{
     float: right;
@@ -67,7 +71,7 @@ section .cover-form{
     width: 400px;
     position: relative;
     top: -5%;
-    height: 110%;
+    height: 99%;
     background-color: rgba(218, 165, 32, 0.836);
     box-shadow: 1px 1px 2px 0px black
 }
@@ -120,6 +124,8 @@ section .cover-form{
     background-color: rgba(0, 0, 0, 0.644);
 }
 
+/*### SEÇÃO DA CHAMADA PARA O EMPREENDIMENTO ###*/
+
 .chamada{
     
     text-align: center;
@@ -152,7 +158,52 @@ section .cover-form{
     font-weight: normal;
 }
 
-@media screen and (max-width: 510px) {
+/*#### MOSAICO IMAGENS/TEXTO ####*/
+
+.flex-mosaico{
+    display: flex;
+    background-color: rgba(218, 165, 32, 0.836);;
+    align-content: center; 
+}
+
+.item-1-mosaico{
+    background-position: center;
+    background-size: cover;
+    width: 60%;
+}
+
+.item-2-mosaico{
+    justify-items: center;
+    padding: 60px 40px;
+    width: 40%;
+}
+
+.item-2-mosaico p{
+    text-align: justify;
+}
+
+footer{
+    background-color: black;
+    text-align: center;
+    padding: 20px 0;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+footer p{
+    margin-top: 0;
+    color: white;
+}
+
+footer img{
+    width: 120px;
+}
+
+
+
+/*#### RESPONSIVIDADE ####*/
+
+@media screen and (max-width: 768px) {
     
     .container{
         text-align: center;
@@ -163,17 +214,17 @@ section .cover-form{
         float: none;
         display: inline-block;
     }    
+
+    .flex-mosaico{
+        display: block;
+    }
+
+    .item-1-mosaico{
+        padding-top: 80%;
+        width: 100%;
+    }
+
+    .item-2-mosaico{
+        width: 100%;
+    }
 }
-
-/*#### ####*/
-
-/*#### ####*/
-
-/*#### ####*/
-
-/*#### ####*/
-
-/*#### ####*/
-
-/*#### ####*/
-
