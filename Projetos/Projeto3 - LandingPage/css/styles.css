@@ -185,7 +185,54 @@ section.sessao1{
     background-size: 100% 100%;
 }
 
+/*#### SESSAO 2 ####*/
+
+section.sessao-2{
+    padding-left: 2%;
+    padding-right: 2%;
+    background-color: white;
+    text-align: center;
+}
+
+section.sessao-2 .container{
+    max-width: 1000px;
+}
+
+section.sessao-2 h2{
+    color: #472663;
+    font-weight: 300;
+}
+
+section.sessao-2 p{
+    margin-top: 30px;
+    max-width: 900px;
+    display: inline-block;
+}
+
+section img{
+    width: 100%;
+    margin-top: 40px;
+}
+
 /*#### RESPONSIVIDADE ####*/
+
+@media screen and (max-width: 830px){
+    
+    .chamada1{
+        max-width: none;
+        width: 100%;
+        text-align: center;
+        float: none;
+        margin: 170px 0;
+    }
+    
+    .chamada1 h2{
+        font-size: 30px;
+        padding: 0 10px;
+        color: white;
+        font-weight: 300;
+    }
+}
 
 @media screen and (max-width: 768px){
 
@@ -257,5 +304,9 @@ section.sessao1{
     }
     .device-sessao1{
         display: none;
+    }
+
+    section.sessao-2 .container{
+        margin-top: 40px;
     }
 }
