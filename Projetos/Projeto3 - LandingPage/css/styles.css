@@ -121,14 +121,15 @@ header nav.desktop-menu li a{
 /*#### SESSÃO 1 ####*/
 
 section.sessao1.container{
-    max-width: 800px;
+    max-width: 1000px;
+    height: calc(100% + 30px);
 }
 
 section.sessao1{
     width: 100%;
     background-color: #472562;
     padding: 0 2%;
-    height: 400px;
+    height: 370px;
     margin-top: 0 auto;
 }
 
@@ -177,7 +178,7 @@ section.sessao1{
 .device-sessao1{
     float: left;
     width: 50%;
-    height: 430px;
+    height: 100%;
     position: relative;
     top: -30px;
     background-image: url(../Imagens/device.png);
@@ -196,6 +197,7 @@ section.sessao-2{
 
 section.sessao-2 .container{
     max-width: 1000px;
+    margin-top: 0.83rem;
 }
 
 section.sessao-2 h2{
@@ -211,10 +213,128 @@ section.sessao-2 p{
 
 section img{
     width: 100%;
-    margin-top: 40px;
+    margin-top: 10px;
+    position: relative;
+    top: 70px;
 }
 
+/*#### SESSAO 3 ####*/
+
+.sessao-3{
+    width: 100%;
+}
+
+.part1{
+    color: white;
+    float: left;
+    width: 50%;
+    padding: 140px 0 90px 0;
+    background-color: #835fa7;
+}
+
+.wraper-part1{
+    max-width: 600px;
+    float: right;
+    padding: 0 30px;
+}
+
+.part1 h2{
+    font-weight: 300;
+    font-style: italic;
+    font-size: 23px;
+}
+
+.part1 p{
+    font-size: 15px;
+    line-height: 35px;
+    margin-top: 10px;
+}
+
+.part2{
+	float: left;
+	width: 50%;
+	padding:140px 0 90px 0;
+	background: white;
+}
+
+.sobre-autor{
+	float: left;
+	max-width: 600px;
+	padding-left: 30px;
+}
+
+.titulo-autor{
+	float: left;
+	width: 100%;
+}
+
+.wraper-titulo-autor{
+	float: left;
+}
+
+.titulo-autor h2{
+	color: #232323;
+	font-weight: 400;
+	font-size: 21px;
+	padding-right: 20px;
+}
+
+.titulo-autor p{
+	font-size: 13px;
+	color: #232323;
+	font-style: italic;
+	font-weight: 300;
+}
+
+.titulo-autor .img-autor{
+	float: left;
+	width: 40px;
+	height:40px;
+	position: relative;
+	top:-4px;
+	border-radius: 20px;
+	background-color: gray;
+}
+
+.texto-autor{
+	float: left;
+	width: 100%;
+	margin-top:10px;
+}
+
+.texto-autor p{
+	color: #232323;
+	font-size: 15px;
+}
+
+.slider-bullets{
+	width: 100%;
+	float: left;
+	padding-left: 30px;
+	margin-top:12px;
+}
+
+.slider-bullets span{
+	width: 16px;
+	height: 16px;
+	float: left;
+	margin-right: 8px;
+	cursor: pointer;
+	border-radius: 8px;
+	background-color: rgb(200,200,200);
+}
+
+/*#### SESSAO 4 ####*/
+
+
+
+
 /*#### RESPONSIVIDADE ####*/
+@media screen and (max-width: 930px) {
+    .texto-sessao1{
+        width: 100%;
+    }    
+}
 
 @media screen and (max-width: 830px){
     
@@ -309,4 +429,22 @@ section img{
     section.sessao-2 .container{
         margin-top: 40px;
     }
+}
+
+@media screen and (max-width: 580px){
+    .part1{
+        width: 100%;
+        padding: 40px 0;
+    }
+
+    .part2{
+        width: 100%;
+        padding: 40px 0;
+    }
+
+    .sessao2 img{
+        top: 16px;
+        margin-top: 20px;
+    }
+
 }
