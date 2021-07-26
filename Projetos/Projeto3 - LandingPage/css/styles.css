@@ -522,6 +522,46 @@ section.sessao4{
     section.sessao-2 .container{
         margin-top: 40px;
     }
+
+    section.sessao4 .container{
+        text-align: center;
+    }
+    
+    .form{
+        float: none;
+        width: 100%;
+    }
+    
+    .form p{
+        display: inline-block;
+        float: none;
+    }
+    
+    .map-wraper{
+        float: none;
+        width: 100%;
+        padding:0 8%;
+        margin-top:40px;
+    }
+    
+    
+    .map-wraper3{
+        margin-top:10px;
+        width: 100%;
+        padding-top: 100%;
+        display: inline-block;
+        max-width: none;
+        position: relative;
+    }
+    
+    .map-wraper2{
+        position: absolute;
+        left: 0;
+        top:0;
+        width: 100%;
+        height: 100%;
+        padding-top:0;
+    }
 }
 
 @media screen and (max-width: 580px){
