@@ -32,9 +32,30 @@ header .logo img{
     width: 236px;
 }
 
-header nav.menu-mobile{
+nav.menu-mobile{
     float: right;
+    width: 28px;
+    height: 28px;
+    margin-top: 7px;
+    cursor: pointer;
+    background-image: url(../imagens/menu-mobile.png);
+    background-size: 100% 100%;
     display: none;
+}
+
+nav.menu-mobile ul{
+    display: none;
+    z-index: 999;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background-color: white;
+}
+
+nav.menu-mobile ul li{
+    padding-top: 10px 0;
 }
 
 header nav.menu-desktop{
@@ -44,6 +65,11 @@ header nav.menu-desktop{
 header nav.menu-desktop ul{
     padding: 8px 0;
     list-style-type: none;
+}
+
+header nav.menu-mobile ul li{
+    text-transform: uppercase;
+    padding: 10px 0;
 }
 
 header nav.menu-desktop ul li{
@@ -67,7 +93,6 @@ header ul a:hover{
 .mosaico-single{
     float: left;
     width: calc(100% / 6);
-
 }
 
 .img-mosaico-single{
@@ -201,10 +226,15 @@ section.perfil-container .texto-perfil p{
         width: 94%;
         max-width: 380px;
         padding: 40px 2%;
-        background-image: none;
+    }
+
+    section.perfil-container .perfil-wraper{
+        padding-top: 0;
     }
 
     section.perfil-container .perfil-wraper2{
+        height: auto;
+        position: static;
         text-align: center;
         display: inline-block;
     }
