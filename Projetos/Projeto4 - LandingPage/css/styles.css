@@ -198,6 +198,18 @@ section.perfil-container .texto-perfil p{
     margin-top: 8px;
 }
 
+/*#### VÍDEOS ####*/
+
+section.videos{
+    padding: 50px 0;
+}
+
+section.videos .box-video{
+    float: left;
+    width: 33.3%;
+    padding-top: calc(33.3% * 0.6);
+}
+
 /*#### RESPONSIVO ####*/
 
 @media screen and (max-width: 768px) {
