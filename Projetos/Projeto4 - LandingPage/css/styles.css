@@ -32,16 +32,21 @@ header .logo img{
     width: 236px;
 }
 
-header nav{
+header nav.menu-mobile{
+    float: right;
+    display: none;
+}
+
+header nav.menu-desktop{
     float: right;
 }
 
-header nav ul{
+header nav.menu-desktop ul{
     padding: 8px 0;
     list-style-type: none;
 }
 
-header nav ul li{
+header nav.menu-desktop ul li{
     float: left;
     font-size: 14px;
     text-transform: uppercase;
@@ -172,6 +177,14 @@ section.perfil-container .texto-perfil p{
 
 @media screen and (max-width: 768px) {
     
+    header nav.menu-desktop{
+        display: none;
+    }
+
+    header nav.menu-mobile{
+        display: block;
+    }
+
     section.servicos > .container{
         flex-direction: column;
     }
@@ -217,6 +230,14 @@ section.perfil-container .texto-perfil p{
     section.perfil-container .img-perfil{
         width: 80%;
         padding-top: 110%;
+    }
+    
+}
+
+@media screen and (max-width: 480px) {
+
+    header .logo img{
+        width: 200px;
     }
     
 }
