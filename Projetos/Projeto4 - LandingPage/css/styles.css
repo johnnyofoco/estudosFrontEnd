@@ -119,3 +119,104 @@ section.servicos > .container .box-servico:nth-of-type(2){
     background-color: #688293;
     background-image: none;
 }
+
+/*#### PERFIL ####*/
+
+section.perfil-container{
+    padding: 40px 0;
+}
+
+section.perfil-container .container{
+    max-width: 800px;
+}
+
+section.perfil-container .perfil-wraper{
+    padding-top: 60%;
+    position: relative;
+}
+
+section.perfil-container .perfil-wraper2{
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+}
+
+section.perfil-container .img-perfil{
+    width: 40%;
+    height: 100%;
+    background-image: url(../imagens/perfil.png);
+    background-size: 100% 100%;
+}
+
+section.perfil-container .texto-perfil{
+    width: 60%;
+    padding: 0 30px;
+}
+
+section.perfil-container .texto-perfil h2{
+    color: #698293;
+    font-size: 18px;
+}
+
+section.perfil-container .texto-perfil p{
+    color: #4b4b4b;
+    font-size: 14px;
+    margin-top: 8px;
+}
+
+/*#### RESPONSIVO ####*/
+
+@media screen and (max-width: 768px) {
+    
+    section.servicos > .container{
+        flex-direction: column;
+    }
+
+    section.servicos > .container 
+    .box-servico:nth-of-type(1), 
+    .box-servico:nth-of-type(3){
+        width: 90%;
+        max-width: 350px;
+        padding: 30px 2%;
+}
+
+    section.servicos > .container .box-servico:nth-of-type(2){
+        width: 94%;
+        max-width: 380px;
+        padding: 40px 2%;
+        background-image: none;
+    }
+
+    section.perfil-container .perfil-wraper2{
+        text-align: center;
+        display: inline-block;
+    }
+    
+    section.perfil-container .img-perfil{
+        width: 50%;
+        height: auto;
+        padding-top: 70%;
+        display: inline-block;
+    }
+    
+    section.perfil-container .texto-perfil{
+        display: inline-block;
+        width: 100%;
+        padding: 0 30px;
+        text-align: justify;
+    }
+    
+}
+
+@media screen and (max-width: 580px) {
+
+    section.perfil-container .img-perfil{
+        width: 80%;
+        padding-top: 110%;
+    }
+    
+}
