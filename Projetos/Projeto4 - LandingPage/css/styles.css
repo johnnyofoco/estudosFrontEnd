@@ -209,7 +209,6 @@ section.videos .box-video{
 	width: 33.3%;
 	position: relative;
 	border:5px solid white;
-	/*background-color: green;*/
 	padding-top:calc(33.3% * 0.6);
 }
 
@@ -222,6 +221,41 @@ section.videos iframe{
 }
 
 /*#### TRATAMENTOS ####*/
+
+section.tratamentos{
+	padding:70px 0;
+}
+
+section.tratamentos .tratamento-container{
+	float: left;
+	width: 33.3%;
+}
+
+section.tratamentos > h2{
+	color: #698293;
+	text-align: center;
+	font-size: 18px;
+}
+
+section.tratamentos > .container{
+	padding:80px 0;
+}
+
+.tratamento-single{
+	padding:20px;
+}
+
+.tratamento-single h2{
+	font-size: 18px;
+	color: #737373;
+}
+
+.tratamento-single p{
+	padding:10px 0;
+	font-size: 13px;
+	color: #b4b4b4;
+}
+
 
 /*#### RESPONSIVO ####*/
 
@@ -277,6 +311,18 @@ section.videos iframe{
         padding: 0 30px;
         text-align: justify;
     }
+
+    section.videos{
+        text-align: center;
+    }
+
+    section.videos .box-video{
+        float: none;
+        width: 70%;
+        display: inline-block;
+        padding-top:calc(70% * 0.6);
+    }
+
     
 }
 
@@ -287,6 +333,10 @@ section.videos iframe{
         padding-top: 110%;
     }
     
+    section.videos .box-video{
+		width: 100%;
+		padding-top:calc(100% * 0.6);
+	}
 }
 
 @media screen and (max-width: 480px) {
