@@ -205,10 +205,23 @@ section.videos{
 }
 
 section.videos .box-video{
-    float: left;
-    width: 33.3%;
-    padding-top: calc(33.3% * 0.6);
+	float: left;
+	width: 33.3%;
+	position: relative;
+	border:5px solid white;
+	/*background-color: green;*/
+	padding-top:calc(33.3% * 0.6);
 }
+
+section.videos iframe{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/*#### TRATAMENTOS ####*/
 
 /*#### RESPONSIVO ####*/
 
