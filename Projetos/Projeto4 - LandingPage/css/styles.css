@@ -326,7 +326,7 @@ section.depoimentos .depoimento-single{
 	float: left;
 	width: calc(100% / 9);
 	padding-top: calc(100% / 9);
-	background-color: blue;
+	background-color: #ccc;
 	border:6px solid white;
 }
 
@@ -344,6 +344,105 @@ section.depoimentos .depoimento-single{
 	padding:10px 0;
 	font-size: 13px;
 }
+
+/*#### CONTATO####*/
+
+section.contato{
+	padding:60px 2%;
+    background-color: #ccc;
+}
+
+section.contato > h2{
+	color: #737373;
+	text-align: center;
+	font-size: 18px;
+}
+
+section.contato form{
+	width: 100%;
+	margin: 30px auto;
+	max-width: 500px;
+}
+
+.form-wraper{
+	float: left;
+	padding:0 10px;
+	margin-top: 10px;
+}
+
+.w100{
+	width: 100%;
+}
+
+.w50{
+	width: 50%;
+}
+
+.form-wraper span{
+	font-size: 15px;
+	color: #737373
+}
+
+.form-wraper input[type=text], input[type=email]{
+	width: 100%;
+	height: 35px;
+	line-height: 35px;
+	padding-left: 9px;
+	border:1px solid #dadada;
+	margin-top:8px;
+}
+
+.form-wraper textarea{
+	width: 100%;
+	margin-top:8px;
+	padding:8px;
+	height: 121px;
+	resize: none;
+	border: 1px solid #dadada;
+	/*
+	resize: horizontal;
+	resize: vertical;
+	*/
+}
+
+.form-wraper input[type=submit]{
+	width: 100px;
+	display: inline-block;
+	height: 35px;
+	border: 0;
+	background: #688293;
+	color: white;
+	cursor: pointer;
+}
+
+/*#### RODAPÉ ####*/
+
+footer{
+	padding:40px 2%;
+	background-color: #688293;
+}
+
+footer .container{
+	max-width: 1100px;
+}
+
+footer .footer-block{
+	float: left;
+	width: 33.3%;
+}
+
+.footer-block h2{
+	color: white;
+	font-weight: normal;
+	font-size: 18px;
+}
+
+.footer-block p{
+	margin-top:8px;
+	color: white;
+	font-size: 14px;
+}
+
 
 /*#### RESPONSIVO ####*/
 
@@ -430,6 +529,17 @@ section.depoimentos .depoimento-single{
     .mosaico-social > div:nth-of-type(1n+4){
         display: none;
     }
+
+    
+	footer{
+	    text-align: center;
+	}
+
+	footer .footer-block{
+        float: none;
+        width: 100%;
+        margin:30px 0;
+	}
     
 }
 
@@ -443,6 +553,10 @@ section.depoimentos .depoimento-single{
     section.videos .box-video{
 		width: 100%;
 		padding-top:calc(100% * 0.6);
+	}
+    
+	.w50{
+		width: 100%;
 	}
 }
 
