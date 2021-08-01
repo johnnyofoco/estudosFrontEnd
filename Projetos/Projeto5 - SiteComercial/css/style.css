@@ -1,81 +1,140 @@
-/*#### GLOBAL ####*/
-
 *{
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	
-}
-
-.clear{
-	clear: both;
+	font-family:'Oswald', sans-serif;
 }
 
 html,body{
 	height: 100%;
 }
 
-/*#### HEADER ####*/
-
 .container{
 	width: 100%;
 	max-width: 1280px;
-	margin: 0 auto;
+	margin:0 auto;
 }
 
-.container > img{
+.clear{
+	clear: both;
+}
+
+header{
+	padding:20px 2% 35px 2%;
+	height: 130px;
+}
+
+header div.logo{
 	float: left;
-	margin: 20px 5%;
 }
 
-/*#### HEADER-MENU ####*/
-
-.menu-desktop{
+header nav.desktop{
 	float: right;
-	margin-top: 60px;
-	margin-right: 5%;
+	position: relative;
+	top:40px;
 }
 
-.menu-desktop li{
-	display: inline-block;
+header nav.desktop ul{
 	list-style-type: none;
-	padding: 0px 5px;
 }
 
-.menu-desktop ul a{
-	text-decoration: none;
-	color: black;
-	font-size: 18px;
-	font-weight: bold;
+header nav.desktop ul li{
+	float: left;
+	font-size: 23px;
+	padding:0 30px;
 	font-style: italic;
 }
 
-.menu-desktop ul a:hover{
-	color: red;
+header nav.desktop a{
+    color: black;
+    text-decoration: none;
 }
 
-/*#### HEADER-BANNER ####*/
-
-.container-banner{
-	max-width: 1280px;
-	margin: 0 auto;
-}
-
-.container-banner > img{
+section.banner{
+	overflow:hidden;
 	width: 100%;
+	height: 650px;
+	background-color: black;
+	background-image: url('../imagens/bg.jpg');
+	background-size: contain;
+	background-position: right bottom;
+	background-repeat: no-repeat;
+}
+
+.text-banner{
+	padding:70px;
+}
+
+.text-banner-single{
+	width: 314px;
+	font-style: italic;
+	margin-top:30px;
+	height: 70px;
+	line-height: 70px;
+	padding-left: 50px;
+	text-transform: uppercase;
+	color: white;
+	font-size: 23px;
+	background-image: url('../imagens/box-text.png');
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+
+.text-banner .text-banner-single:nth-of-type(2){
+	width: 200px;
+	height: 70px;
+	line-height: 70px;
+	position: relative;
+	left: -10px;
+}
+
+.text-banner .text-banner-single:nth-of-type(3){
+	width: 170px;
+	height: 70px;
+	line-height: 70px;
+	position: relative;
+	left: -20px;
+}
+
+.text-banner .text-banner-single:nth-of-type(4){
+	width: 320px;
+	font-size: 21px;
+	color: black;
+	position: relative;
+	left: -30px;
+	line-height: 70px;
+	background-image: url('../imagens/box-white-text.png');
 }
 
 
-/*#### DESTAQUES ####*/
+
+@media screen and (max-width: 768px){
+	section.banner{
+		background-size: cover;
+		background-position: 100px center;
+		height: 80vh;
+	}
+
+	nav.desktop
+	{
+		display: none;
+	}
+}
 
 
 
-/*#### SERVICOS ####*/
+@media screen and (max-width: 580px){
+.text-banner{
+	padding:30px;
+}
 
+.text-banner-single{
+	width: 240px;
+	font-size: 18px;
+}
 
+.text-banner .text-banner-single:nth-of-type(4){
+	width: 270px;
+}
 
-/*#### CONTATO ####*/
-
-
-
-/*#### RODAPÉ ####*/
+}
