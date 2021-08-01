@@ -20,9 +20,50 @@ html,body{
 .container{
 	width: 100%;
 	max-width: 1280px;
-	margin:0 auto;
+	margin: 0 auto;
 }
 
+.container > img{
+	float: left;
+	margin: 20px 5%;
+}
+
+/*#### HEADER-MENU ####*/
+
+.menu-desktop{
+	float: right;
+	margin-top: 60px;
+	margin-right: 5%;
+}
+
+.menu-desktop li{
+	display: inline-block;
+	list-style-type: none;
+	padding: 0px 5px;
+}
+
+.menu-desktop ul a{
+	text-decoration: none;
+	color: black;
+	font-size: 18px;
+	font-weight: bold;
+	font-style: italic;
+}
+
+.menu-desktop ul a:hover{
+	color: red;
+}
+
+/*#### HEADER-BANNER ####*/
+
+.container-banner{
+	max-width: 1280px;
+	margin: 0 auto;
+}
+
+.container-banner > img{
+	width: 100%;
+}
 
 
 /*#### DESTAQUES ####*/
